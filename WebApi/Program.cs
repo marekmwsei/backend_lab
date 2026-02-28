@@ -35,7 +35,6 @@ public class Program
 
         app.MapGet("/api/students/{id}", (IGenericRepository<Student> repo, int id) =>
             {
-                
                 return await repo.FindByIdAsync(id);
             });
 
